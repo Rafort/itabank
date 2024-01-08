@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <title>Portal de negociação</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand fixed-top">
+    <div class="container"> <a class="navbar-brand text-primary" href="home.html">
+        <img class="d-block" src="img/logo.png" height="34vh">
+      </a>
+      <!-- Topbar Navbar -->
+      <p class="small title-space mb-2 mt-2 text-secondary">Portal de negociação</p>
+      <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="index.html">
+        </a>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow text-secondary">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2">Regina</span>
+            <i class="fa fa-bars fa-fw fa-lg text-secondary"   ></i>
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="home.html">Início </a>
+            <a class="dropdown-item" href="cadastro.html">Meu cadastro </a>
+            <a class="dropdown-item" href="codigo.html">Alterar código </a>
+            <a class="dropdown-item" href="dividas.html">Dívidas para negociar </a>
+            <a class="dropdown-item" href="acordos.html">Meus acordos </a>
+            <a class="dropdown-item" href="agenda.html">Agenda de pagamentos </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logout"> Sair <i class="fa fa-sign-out fa-sm fa-fw mr-2 text-gray-400"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Content -->
+  <div id="inside">
+    <div class="container mb-3">
+      <div class="row mt-3">
+        <div class="col-12 col-lg-12">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-between align-items-center"   >
+              <h4 class="mb-2"   >Agenda de pagamentos</h4>
+              <i class="fa fa-calendar-check-o fa-fw fa-1x py-1 fa-lg"></i>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 pl-4">
+          <h5 class="text-secondary">Próximos pagamentos</h5>
+          <p class="mb-1 small">Clique na parcela para abrir o boleto.</p>
+        </div>
+      </div>
+      <div class="row"   >
+        <div class="flex-wrap col-acao mt-0 pt-0 col-lg-9">
+          <!-- Acordo 1 -->
+          <div class="card no-border">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-12">
+                </div>
+              </div>
+              <h5 class="mb-0 pb-0 text-primary">Acordo</h5>
+              <p class="mb-1 small float-right text-info">Acordo fechado em 14/02/2023</p>
+              <h6 class="pb-3 mb-0 border-bottom">221020-48</h6>
+            </div>
+            <div class="card-body pt-0">
+              <div class="row">
+                <div class="col-lg-12 col-12">
+                  <!-- Boletos -->
+                  <div class="accordion" id="nest">
+                    <!--  boleto1-->
+                    <div class="card m-0 py-2 px-0">
+                      <div class="card-header p-2 pb-3" id="head1">
+                        <div class="row mt-4">
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Parcela:</p>
+                            <h6 class="text-primary">3 de 6</h6>
+                          </div>
+                          <div class="pl-0 col-lg-3 col-7">
+                            <p class="mb-1 small">Valor:</p>
+                            <h6 class="text-body">R$ 400,00</h6>
+                          </div>
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Vencimento:</p>
+                            <h6 class="text-body">15/06/2023 </h6>
+                          </div>
+                          <div class="pl-0 col-lg-2 col-5">
+                            <p class="small mb-1 ">Status:</p>
+                            <h6 class="text-danger">Em atraso</h6>
+                          </div>
+                          <div class="text-center p-0 d-flex justify-content-center align-items-end col-lg-1 col-2">
+                            <button class="btn btn-link mt-0" type="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapse1" data-target="#collapse1">Abrir</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="collapse1" class="collapse" aria-labelledby="heading1">
+                        <div class="card-body px-4">
+                          <div class="row">
+                            <div class="col-xs-8 col-12 col-lg-12 px-1">
+                              <p class="text-info mb-1">Linha digitável:</p><a class="btn btn-link btn-sm float-right mt-2 pl-1 pr-3" href="#">Copiar</a>
+                              <p class="codebar">0019050095401448160690680950314337370000000100</p>
+                            </div>
+                            <div class="col-12 d-flex col-lg-12 flex-row px-0 mt-2 justify-content-around">
+                              <a class="btn btn-link mr-1 mb-1 text-left" href="#"><i class="fa fa-download fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Baixar boleto</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-mobile fa-fw fa-lg pull-left mr-1 pt-1 pb-2 d-none d-sm-block"></i>Receber por SMS</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-envelope-o fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Receber por e-mail</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  boleto2-->
+                    <div class="card m-0 px-0 py-0">
+                      <div class="card-header p-2 pb-3 py-2" id="head2">
+                        <div class="row mt-4">
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Parcela:</p>
+                            <h6 class="text-primary">4 de 6</h6>
+                          </div>
+                          <div class="pl-0 col-lg-3 col-7">
+                            <p class="mb-1 small">Valor:</p>
+                            <h6 class="text-body">R$ 400,00</h6>
+                          </div>
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Vencimento:</p>
+                            <h6 class="text-body">15/07/2023 </h6>
+                          </div>
+                          <div class="pl-0 col-lg-2 col-5">
+                            <p class="small mb-1 ">Status:</p>
+                            <h6 class="text-body">Em aberto</h6>
+                          </div>
+                          <div class="text-center p-0 d-flex justify-content-center align-items-end col-lg-1 col-2">
+                            <button class="btn btn-link mt-0" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Abrir</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="collapse2" class="collapse" aria-labelledby="heading2">
+                        <div class="card-body px-4">
+                          <div class="row">
+                            <div class="col-xs-8 col-12 col-lg-12 px-1">
+                              <p class="text-info mb-1">Linha digitável:</p><a class="btn btn-link btn-sm float-right mt-2 pl-1 pr-3" href="#">Copiar</a>
+                              <p class="codebar">0019050095401448160690680950314337370000000100</p>
+                            </div>
+                            <div class="col-12 d-flex col-lg-12 flex-row px-0 mt-2 justify-content-around">
+                              <a class="btn btn-link mr-1 mb-1 text-left" href="#"><i class="fa fa-download fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Baixar boleto</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-mobile fa-fw fa-lg pull-left mr-1 pt-1 pb-2 d-none d-sm-block"></i>Receber por SMS</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-envelope-o fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Receber por e-mail</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  boleto3-->
+                    <div class="card m-0 px-0 py-0">
+                      <div class="card-header p-2 pb-3 py-2" id="head3">
+                        <div class="row mt-4">
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Parcela:</p>
+                            <h6 class="text-primary">5 de 6</h6>
+                          </div>
+                          <div class="pl-0 col-lg-3 col-7">
+                            <p class="mb-1 small">Valor:</p>
+                            <h6 class="text-body">R$ 400,00</h6>
+                          </div>
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Vencimento:</p>
+                            <h6 class="text-body">15/08/2023 </h6>
+                          </div>
+                          <div class="pl-0 col-lg-2 col-5">
+                            <p class="small mb-1 ">Status:</p>
+                            <h6 class="text-body">Em aberto</h6>
+                          </div>
+                          <div class="text-center p-0 d-flex justify-content-center align-items-end col-lg-1 col-2">
+                            <button class="btn btn-link mt-0" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse1">Abrir</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="collapse3" class="collapse" aria-labelledby="heading3">
+                        <div class="card-body px-4">
+                          <div class="row">
+                            <div class="col-xs-8 col-12 col-lg-12 px-1">
+                              <p class="text-info mb-1">Linha digitável:</p><a class="btn btn-link btn-sm float-right mt-2 pl-1 pr-3" href="#">Copiar</a>
+                              <p class="codebar">0019050095401448160690680950314337370000000100</p>
+                            </div>
+                            <div class="col-12 d-flex col-lg-12 flex-row px-0 mt-2 justify-content-around">
+                              <a class="btn btn-link mr-1 mb-1 text-left" href="#"><i class="fa fa-download fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Baixar boleto</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-mobile fa-fw fa-lg pull-left mr-1 pt-1 pb-2 d-none d-sm-block"></i>Receber por SMS</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-envelope-o fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Receber por e-mail</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  boleto4-->
+                    <div class="card m-0 px-0 py-0">
+                      <div class="card-header p-2 pb-3 py-2" id="head4">
+                        <div class="row mt-4">
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Parcela:</p>
+                            <h6 class="text-primary">6 de 6</h6>
+                          </div>
+                          <div class="pl-0 col-lg-3 col-7">
+                            <p class="mb-1 small">Valor:</p>
+                            <h6 class="text-body">R$ 400,00</h6>
+                          </div>
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Vencimento:</p>
+                            <h6 class="text-body">15/09/2023 </h6>
+                          </div>
+                          <div class="pl-0 col-lg-2 col-5">
+                            <p class="small mb-1 ">Status:</p>
+                            <h6 class="text-body">Em aberto</h6>
+                          </div>
+                          <div class="text-center p-0 d-flex justify-content-center align-items-end col-lg-1 col-2">
+                            <button class="btn btn-link mt-0" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Abrir</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="collapse4" class="collapse" aria-labelledby="heading4">
+                        <div class="card-body px-4">
+                          <div class="row">
+                            <div class="col-xs-8 col-12 col-lg-12 px-1">
+                              <p class="text-info mb-1">Linha digitável:</p><a class="btn btn-link btn-sm float-right mt-2 pl-1 pr-3" href="#">Copiar</a>
+                              <p class="codebar">0019050095401448160690680950314337370000000100</p>
+                            </div>
+                            <div class="col-12 d-flex col-lg-12 flex-row px-0 mt-2 justify-content-around">
+                              <a class="btn btn-link mr-1 mb-1 text-left" href="#"><i class="fa fa-download fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Baixar boleto</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-mobile fa-fw fa-lg pull-left mr-1 pt-1 pb-2 d-none d-sm-block"></i>Receber por SMS</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-envelope-o fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Receber por e-mail</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Acordo 2-->
+          <div class="card no-border mt-5">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-12">
+                </div>
+              </div>
+              <h5 class="mb-0 pb-0 text-primary">Acordo</h5>
+              <p class="mb-1 small float-right text-info">Acordo fechado em 06/01/2024</p>
+              <h6 class="pb-3 mb-0 border-bottom">241480-31</h6>
+            </div>
+            <div class="card-body pt-0">
+              <div class="row">
+                <div class="col-lg-12 col-12">
+                  <!-- Boletos -->
+                  <div class="accordion" id="nest">
+                    <!--  boleto1-->
+                    <div class="card m-0 py-2 px-0">
+                      <div class="card-header p-2 pb-3" id="head10">
+                        <div class="row mt-4">
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Parcela:</p>
+                            <h6 class="text-primary">1 de 1</h6>
+                          </div>
+                          <div class="pl-0 col-lg-3 col-7">
+                            <p class="mb-1 small">Valor:</p>
+                            <h6 class="text-body">R$ 600,00</h6>
+                          </div>
+                          <div class="col-lg-3 col-5">
+                            <p class="mb-1 small">Vencimento:</p>
+                            <h6 class="text-body"   >15/01/2024 </h6>
+                          </div>
+                          <div class="pl-0 col-lg-2 col-5">
+                            <p class="small mb-1 ">Status:</p>
+                            <h6 class="text-body">Em aberto</h6>
+                          </div>
+                          <div class="text-center p-0 d-flex justify-content-center align-items-end col-lg-1 col-2">
+                            <button class="btn btn-link mt-0" type="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapse10" data-target="#collapse10">Abrir</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="collapse10" class="collapse" aria-labelledby="heading10">
+                        <div class="card-body px-4">
+                          <div class="row">
+                            <div class="col-xs-8 col-12 col-lg-12 px-1">
+                              <p class="text-info mb-1">Linha digitável:</p><a class="btn btn-link btn-sm float-right mt-2 pl-1 pr-3" href="#">Copiar</a>
+                              <p class="codebar">0019050095401448160690680950314337370000000100</p>
+                            </div>
+                            <div class="col-12 d-flex col-lg-12 flex-row px-0 mt-2 justify-content-around">
+                              <a class="btn btn-link mr-1 mb-1 text-left" href="#"><i class="fa fa-download fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Baixar boleto</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-mobile fa-fw fa-lg pull-left mr-1 pt-1 pb-2 d-none d-sm-block"></i>Receber por SMS</a>
+                              <a class="btn mr-1 mb-1 btn-link text-left" href="#"><i class="fa fa-envelope-o fa-fw pull-left pt-1 pb-2 d-none d-sm-block"></i>Receber por e-mail</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row px-4">
+            <div class="col-lg-12 d-flex flex-column justify-content-start align-items-start">
+              <a class="btn btn-link my-4" href="home.html">Ir para home</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade mt-5" id="logout">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-body">Sair</h5> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <h6>Deseja encerrar a sessão?</h6>
+        </div>
+        <div class="modal-footer"> <button type="button" class="btn btn-dark px-5">Sair</button> <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Voltar</button> </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      $('#toggleAccordions-show').on('click', function(e) {
+        $('#nest .collapse').removeAttr("data-parent");
+        $('#nest .collapse').collapse('show');
+      })
+      $('#toggleAccordions-hide').on('click', function(e) {
+        $('#nest .collapse').attr("data-parent", "#nest");
+        $('#nest .collapse').collapse('hide');
+      })
+    });
+  </script>
+    
+</body>
+
+</html>

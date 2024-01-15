@@ -37,7 +37,7 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$body-bg: #fff;
+$body-bg: #FAFAFA;
 $body-color: #5c5c5c;
 
 
@@ -889,4 +889,10 @@ background: linear-gradient(180deg, rgba(9,176,244,1) 80%, rgba(242,242,242,1) 8
 .container .row {
     display: flex;
     flex-wrap: wrap;
+}
+.font-12 {
+  font-size:12px;
+}
+.font-13 {
+  font-size:13px;
 }
